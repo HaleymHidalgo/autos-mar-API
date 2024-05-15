@@ -31,11 +31,11 @@ app.get('/avatarOnly', (req, res) => {
 })
 
 app.get('/bySeriesId/:id', (req,res) => {
-     let robotMasters = robotmastersRepo.getRobotMasters();
+    let robotMasters = robotmastersRepo.getRobotMasters();
     
-     let result = robotMasters.filter(r => r.series === parseInt(req.params.id));
-     console.log(result);
-     res.json(result);
+    let result = robotMasters.filter(r => r.series === parseInt(req.params.id));
+    console.log(result);
+    res.json(result);
 });
 
 app.listen(port, function() {
