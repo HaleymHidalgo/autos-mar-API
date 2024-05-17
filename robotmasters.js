@@ -72,5 +72,37 @@ module.exports = [
         "modelo": "Kwid",
         "precio": "8.490.000",
         "cantidad": 210
+    },
+    {
+        "id": 9,
+        "marca": "Renault",
+        "img": "https://dercocenter-api.s3.us-east-1.amazonaws.com/images/version/1708008893-q4gOGH08q3.webp",
+        "modelo": "Kwid E_TECH",
+        "precio": "14.990.000",
+        "cantidad": 14
+    },
+    {
+        "id": 10,
+        "marca": "Renault",
+        "img": "https://dercocenter-api.s3.us-east-1.amazonaws.com/images/versions/2022-01-26-Duster-llanta.jpg",
+        "modelo": "All New Duster",
+        "precio": "15.390.000",
+        "cantidad": 53
+    },
+    {
+        "id": 11,
+        "marca": "Renault",
+        "img": "https://dercocenter-api.s3.us-east-1.amazonaws.com/images/version/1671188451-N4tLIqZfro.webp",
+        "modelo": "Nueva Oroch",
+        "precio": "15.815.100",
+        "cantidad": 83
+    },
+    {
+        "id": 12,
+        "marca": "Renault",
+        "img": "https://dercocenter-api.s3.us-east-1.amazonaws.com/images/versions/2022-05-25-Express 4.jpg",
+        "modelo": "Nuevo Express",
+        "precio": "16.053.000",
+        "cantidad": 95
     }
 ]
