@@ -1,22 +1,16 @@
 {
-  "name": "megaman-robot-masters",
-  "version": "0.0.2",
-  "description": "Robot Masters API for Megaman/Rockman series",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JoseGonzalez321/megaman-robot-masters"
-  },  
+  "name": "api-autos-del-mar",
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-      "start": "node server.js"
+    "start": "nodemon server.js"
   },
-  "keywords": [
-    "Megaman",
-    "Rockman",    
-    "robotmasters"
-  ],
-  "author": "Jose Gonzalez",
-  "license": "None",
+  "keywords": [],
+  "author": "Haleym Hidalgo",
+  "license": "ISC",
+  "description": "This is a API for the project to 'Autos del Mar' website",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
   }
 }
