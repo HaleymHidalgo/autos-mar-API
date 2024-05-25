@@ -1,4 +1,4 @@
-const { vehiculos } = require("../vehiculos")
+const vehiculos = require("../vehiculos")
 const { request , response } = require("express")
 
 const getVehiculosMarca = (req = request , res = response) => {

@@ -3,13 +3,17 @@
 const express = require('express');
 const app = express();
 const port = 3002;
-const vehControllers = require('./vehConstrollers');
 
-app.get('/', vehControllers.getVehiculos)
+//Funciones
+const { getVehiculos } = require('./controllers/getVehiculos.js')
+const { getVehiculoID } = require('./controllers/getVehiculoID.js')
+const { getVehiculosMarca } = require('./controllers/getVehiculosMarca.js')
 
-app.get('/byId/:id', vehControllers.getVehiculoID)
+app.get('/', getVehiculos)
 
-app.get('/byMarca/:marca', vehControllers.getVehiculosMarca)
+app.get('/byId/:id', getVehiculoID)
+
+app.get('/byMarca/:marca', getVehiculosMarca)
 
 app.listen(port, () => {
     console.log('Server running on port', port);

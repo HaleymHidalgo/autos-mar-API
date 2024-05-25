@@ -1,4 +1,4 @@
-const { vehiculos } = require("../vehiculos.js");
+const vehiculos = require("../vehiculos.js");
 const { request , response } = require("express");
 
 const getVehiculos = (req = request , res = response) => {
