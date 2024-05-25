@@ -9,6 +9,11 @@ const { getVehiculos } = require('./controllers/getVehiculos.js')
 const { getVehiculoID } = require('./controllers/getVehiculoID.js')
 const { getVehiculosMarca } = require('./controllers/getVehiculosMarca.js')
 
+app.all('*', function (req, res, next) {
+	res.set('Access-Control-Allow-Origin', '*');
+	next();
+});
+
 app.get('/', getVehiculos)
 
 app.get('/byId/:id', getVehiculoID)
