@@ -3,7 +3,7 @@ const { request , response } = require("express")
 
 const getVehiculoID = (req = request , res = response) => {
     let id = parseInt(req.params.id)
-
+    console.log(id);
     let vehiculo = vehiculos.find((vehiculo) => {
         return vehiculo.id === id
     })
@@ -18,7 +18,7 @@ const getVehiculoID = (req = request , res = response) => {
         return res.json({
             ok:false,
             statusCode:404,
-            msg:"No hay vehiculos con ese ID",
+            msg:"No hay vehiculos con ese ID"
         })
     }
 }
